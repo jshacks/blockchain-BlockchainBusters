@@ -1,0 +1,28 @@
+.artist-dashboard .navbar-header .navbar-brand.main-logo {
+  display: flex;
+  align-items: center;
+  padding: 8px 20px; }
+  .artist-dashboard .navbar-header .navbar-brand.main-logo img {
+    float: left;
+    margin-right: 20px; }
+
+.artist-dashboard.artist-catalog table .rank {
+  width: 40px;
+  text-align: right; }
+
+.artist-dashboard.artist-catalog table .song_name {
+  width: 200px; }
+
+.artist-dashboard.artist-catalog table .album {
+  display: flex;
+  align-items: center; }
+
+.artist-dashboard.artist-catalog table .album-art {
+  display: inline-block;
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  -webkit-background-size: cover;
+  background-size: cover;
+  border-radius: 50px;
+  margin-right: 20px; }

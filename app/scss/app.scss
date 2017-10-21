@@ -1,0 +1,37 @@
+.artist-dashboard{
+  .navbar-header{
+    .navbar-brand.main-logo{
+      display: flex;
+      align-items: center;
+      padding: 8px 20px;
+      img{
+        float: left;
+        margin-right: 20px;
+      }
+    }
+  }
+  &.artist-catalog{
+    table{
+      .rank{
+        width: 40px;
+        text-align: right;
+      }
+      .song_name{
+        width: 200px;
+      }
+      .album{
+        display: flex;
+        align-items: center;
+      }
+      .album-art{
+        display: inline-block;
+        flex-shrink: 0;
+        width: 50px;
+        height: 50px;
+        -webkit-background-size: cover; background-size: cover;
+        border-radius: 50px;
+        margin-right: 20px;
+      }
+    }
+  }
+}
