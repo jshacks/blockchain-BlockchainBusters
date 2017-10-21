@@ -4890,6 +4890,11 @@ h1 .subtitle {
   color: #ffffff;
   background: #1a2a6c !important;
 }
+.btn-red {
+  border-color: #b21f1f !important;
+  color: #ffffff;
+  background: #b21f1f !important;
+}
 .btn-orange {
   border-color: #fdbb2d !important;
   color: #ffffff;
@@ -9524,7 +9529,7 @@ star {
   height: 80vh;
 }
 .bg-gradient {
-  background-color: #f1edd4;
-  background-image: linear-gradient(180deg, #f1edd4 0%, #a31b00 100%);
+  background-color: #FFDEE9;
+background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
 
 }
