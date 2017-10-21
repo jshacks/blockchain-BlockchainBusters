@@ -1,0 +1,15 @@
+version: '2'
+services:
+  testrpc:
+    build: testrpc/
+    command: testrpc --account="0xc7e1dd34128a2f4df8da145ae9f3824d15cecdf84ff28061546e951eb55ee8fd,1000"
+  web3:
+    build: web3/
+    command: tail -f /dev/null #node index.js
+    volumes:
+      - ./web3/:/app
+    working_dir: /app
+    links:
+      - testrpc:testrpc
+    ports:
+      - 3000:3000
