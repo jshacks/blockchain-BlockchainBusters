@@ -9547,6 +9547,9 @@ background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
 .text-orange {
   color: #FFA534;
 }
+.text-green {
+  color: #87CB16;
+}
 .d-inline-block {
   display: inline-block;
 }
