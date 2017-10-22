@@ -9535,14 +9535,18 @@ star {
   height: 80vh;
 }
 .bg-gradient {
-  background-color: #FFDEE9;
-background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+  /*background-color: #FFDEE9;
+  background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);*/
+  background-image: url("./../img/bg.jpeg");
+  background-size: cover;
+  background-position: 50% 50%;
+
 }
 .bg-cover {
   height: 43px;
   width: 43px;
   background-size: cover;
-  background-position: 50% 50%
+  background-position: 50% 50%;
 }
 .text-orange {
   color: #FFA534;
