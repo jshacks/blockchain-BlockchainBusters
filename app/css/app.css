@@ -26,3 +26,13 @@
   background-size: cover;
   border-radius: 50px;
   margin-right: 20px; }
+
+.btn-add-song i {
+  font-size: 1.5em;
+  margin-left: 10px;
+  float: left;
+  margin-right: -10px; }
+
+.input-group.song-price {
+  max-width: 300px;
+  margin: 0 auto; }

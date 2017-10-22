@@ -252,8 +252,9 @@ demo = {
         var data = {
           labels: ['Jan', 'Feb', 'Mar', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
           series: [
-            [542, 443, 320, 780, 553, 453, 326, 434, 568, 610, 756, 895],
-            [412, 243, 280, 580, 453, 353, 300, 364, 368, 410, 636, 695]
+            [2870, 3850, 4900, 4920, 5540, 5860, 6980, 6950, 7520, 788, 0, 0],
+            [670, 1520, 1430, 2400, 2870, 3350, 4350, 4370, 5390, 542, 0, 0],
+            [230, 1130, 670, 1080, 1900, 2390, 3070, 3080, 4390, 410, 0, 0]
           ]
         };
 
@@ -472,7 +473,7 @@ demo = {
             	    type: "warning",
                     showCancelButton: true,
                     confirmButtonClass: "btn btn-info btn-fill",
-                    confirmButtonText: "Yes, delete it!",
+                    confirmButtonText: "Add",
                     cancelButtonClass: "btn btn-danger btn-fill",
                     closeOnConfirm: false,
                 },function(){
