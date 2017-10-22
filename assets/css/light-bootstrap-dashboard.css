@@ -9531,6 +9531,9 @@ star {
 .m-t-2 {
   margin-top: 20px;
 }
+.m-t-5 {
+  margin-top: 50px;
+}
 .h-80vh {
   height: 80vh;
 }
@@ -9554,6 +9557,9 @@ star {
 .text-green {
   color: #87CB16;
 }
+.text-blue {
+  color: #251f6d;
+}
 .d-inline-block {
   display: inline-block;
 }
@@ -9568,4 +9574,13 @@ star {
 }
 .m-x-a {
   margin: 0 auto;
+}
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+.logo-h1{
+  font-size: 60px;
+}
+.logo-h2 {
+  font-size: 39px;
 }
