@@ -4,11 +4,11 @@ services:
     build: testrpc/
     command: testrpc --account="0xc7e1dd34128a2f4df8da145ae9f3824d15cecdf84ff28061546e951eb55ee8fd,1000"
   web3:
-    build: web3/
-    command: tail -f /dev/null #node index.js
+    image: truffle/ci
+    command: /var/workspace/truffle/node_modules/.bin/truffle compile
     volumes:
-      - ./web3/:/app
-    working_dir: /app
+      - .:/opt/app
+    working_dir: /opt/app
     links:
       - testrpc:testrpc
     ports:
