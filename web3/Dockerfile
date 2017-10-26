@@ -1,8 +1,5 @@
-FROM node:6-alpine
+FROM node
 
-RUN apk update
-RUN apk add build-base python git
-RUN npm install -g npm@latest
 RUN npm install -g truffle
 
-CMD ["sh"]
+CMD ["node", "index.js"]

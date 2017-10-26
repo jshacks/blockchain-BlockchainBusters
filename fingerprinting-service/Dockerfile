@@ -10,14 +10,6 @@ RUN curl -sL https://deb.nodesource.com/setup_8.x | bash - \
     && rm -fr /var/lib/apt/lists/* \
     && rm -fr /tmp/*
 
-COPY package.json index.js /app/
-RUN mkdir /app/public
-COPY public/index.html /app/public/
-
-RUN chown -R node:node /app
-
-USER node
-
 WORKDIR /app
 
 RUN npm install

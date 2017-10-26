@@ -8,13 +8,17 @@ const fs = require('fs');
 const util = require('util');
 const exec = util.promisify(require('child_process').exec);
 
-router.post('/', async (ctx) => {
+router.post('/fingerprint', async (ctx) => {
     const file = ctx.request.body.files.file;
     console.log(`fingerprinting ${file.name}`);
     const cmd = `echoprint-codegen ${file.path}`;
     const { stdout } = await exec(cmd);
     const data = JSON.parse(stdout);
     ctx.set('Content-type', 'application/json');
+
+    // raspunde cu json
+    // TODO adauga call catre contract
+
     ctx.body = '{}';
     ctx.body = JSON.stringify(data[0]);
     fs.unlinkSync(file.path);

@@ -2,7 +2,8 @@ version: '2'
 services:
   testrpc:
     build: testrpc/
-    command: testrpc --account="0xc7e1dd34128a2f4df8da145ae9f3824d15cecdf84ff28061546e951eb55ee8fd,1000"
+    command: --account="0xc7e1dd34128a2f4df8da145ae9f3824d15cecdf84ff28061546e951eb55ee8fd,1000"
+  ## TODO: merge web3, frontend and fprint-service into a single image and run central service
   web3:
     build: web3/
     command: node index.js
@@ -17,9 +18,8 @@ services:
     build: fingerprinting-service/
     ports:
       - 8080:8080
-  frontend:
-    image: nginx
-    ports:
-      - 80:80
     volumes:
-      - ./frontend/app/:/usr/share/nginx/html
+      - ./fingerprinting-service/:/app
+  ## TODO: add monitor code and continue image here
+  # monitor:
+  #   image: fprint-monitor
